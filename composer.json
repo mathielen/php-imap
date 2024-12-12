@@ -65,9 +65,6 @@
         }
     },
     "autoload": {
-        "files": [
-            "src/polyfill.php"
-        ],
         "psr-4": {
             "PhpImap\\": "src/PhpImap"
         }
