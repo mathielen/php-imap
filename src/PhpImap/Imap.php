@@ -7,6 +7,14 @@ declare(strict_types=1);
 
 namespace PhpImap;
 
+//if php 8.4 define constants
+if (!\defined('IMAP_OPENTIMEOUT')) {
+    define('IMAP_OPENTIMEOUT', 1);
+    define('IMAP_READTIMEOUT', 2);
+    define('IMAP_WRITETIMEOUT', 3);
+    define('IMAP_CLOSETIMEOUT', 4);
+}
+
 use const CL_EXPUNGE;
 use const IMAP_CLOSETIMEOUT;
 use const IMAP_OPENTIMEOUT;
